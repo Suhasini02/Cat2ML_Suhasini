@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="static/loginpage.css" rel="stylesheet" />
+    <title>loginpage</title>
+  </head>
+</html>
+<body id="a" background = "loginpage.jpg" >
+  
+  <h1 id="b"><b>LOGIN </b></h1>
+  <form action="/auth" method="POST"> 
+  <input type="text" placeholder="Enter Username" name="uname" required>
+  <br>
+  <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+   <br>
+   <br>
+    <button type="submit" value="Login">Submit</button>
+    {% if error %}
+	  	<p id="c">{{ error }}</p>
+	  {% endif %}
+    <br>
+    <br>
+    </form>
+ </body>
+</html>
